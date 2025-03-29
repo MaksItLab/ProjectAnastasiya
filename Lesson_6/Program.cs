@@ -16,27 +16,29 @@ namespace Lesson_6
             //int[] array = { 1, 2, 3, 4 };
 
             int[] array; //null, объявили массив
-            array = new int[] { -300, -400, -1055, -6665, -6634, -654, -544, -7710, -556, -8818, -7645 };
+            array = new int[] {  -1055, -6665, -6634, -654, -544, -400, -7710, -556, - 300, -8818, -7645 };
 
-            for (int i = 0; i < array.Length; i++) 
-            {
-                Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
+            //for (int i = 0; i < array.Length; i++) 
+            //{
+            //    Console.Write(array[i] + " ");
+            //}
+            //Console.WriteLine();
 
-            int max = MaxElement(array); 
-            Console.WriteLine("Max: " + max);
+            //int max = MaxElement(array); 
+            //Console.WriteLine("Max: " + max);
 
-            int min = MinElement(array);
-            Console.WriteLine("Min: " + min);
+            //int min = MinElement(array);
+            //Console.WriteLine("Min: " + min);
 
-            Sort(ref array);
+            //Sort(ref array);
 
-            for (int i = 0; i < array.Length; i++)
-            {
-                Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    Console.Write(array[i] + " ");
+            //}
+            //Console.WriteLine();
+
+            int[] arr = FindTwoMax(array);
         }
 
         public static void Sort(ref int[] array)
@@ -54,6 +56,34 @@ namespace Lesson_6
                 }
             }
         }
+
+
+        public static int[] FindTwoMax(int[] arr)
+        {
+            if (arr.Length < 2)
+            {
+                Console.WriteLine("Количество элементов меньше 2");
+                return null;
+            }
+
+            int max1 = arr[0];
+            int max2 = arr[1];
+
+            for (int i = 1; i < arr.Length; i++) 
+            {
+                if (arr[i] > max1)
+                {
+                    max2 = max1;
+                    max1 = arr[i];
+                }
+            }
+
+            int[] newArray = { max1, max2 };
+
+            return newArray;
+        }
+
+
 
         public static int MaxElement(int[] array)
         {
