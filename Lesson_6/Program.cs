@@ -15,8 +15,8 @@ namespace Lesson_6
             //int[] array = new int[] { 1, 2, 3, 4 };
             //int[] array = { 1, 2, 3, 4 };
 
-            int[] array; //null, объявили массив
-            array = new int[] {  -1055, -6665, -6634, -654, -544, -400, -7710, -556, - 300, -8818, -7645 };
+            //int[] array; //null, объявили массив
+            //array = new int[] {  -1055, -6665, -6634, -654, -544, -400, -7710, -556, - 300, -8818, -7645 };
 
             //for (int i = 0; i < array.Length; i++) 
             //{
@@ -38,7 +38,65 @@ namespace Lesson_6
             //}
             //Console.WriteLine();
 
-            int[] arr = FindTwoMax(array);
+            //int[] arr = FindTwoMax(array);
+
+            int[] array = new int[] { 1, 2, 3, 4, 5, 6, 7 }; //одномерный массив
+
+            int[,] arrayTwoD = new int[3, 5]
+            {
+                { 1,2,3,4,5},//0
+                { 1,2,3,4,5},//1
+                { 1,2,3,4,5},//2
+            };
+
+            //Console.WriteLine(arrayTwoD.Length);
+
+            //for (int i = 0; i < arrayTwoD.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < arrayTwoD.GetLength(1); j++)
+            //    {
+            //        Console.Write(arrayTwoD[i,j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
+            int[][] arrayTooth = new int[3][] 
+            {
+                new int[] { 1},
+                new int[] { 1,2,3,4,5},
+                new int[] { 1,2,3,4},
+            }; //зубчатый
+
+            //for(int i = 0;i < arrayTooth.Length; i++)
+            //{
+            //    for(int j = 0; j < arrayTooth[i].Length; j++)
+            //    {
+            //        Console.Write(arrayTooth[i][j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //Console.WriteLine(arrayTwoD[0,0]);
+            //Console.WriteLine(arrayTwoD[0,1]);
+            //Console.WriteLine(arrayTwoD[0,2]);
+            //Console.WriteLine(arrayTwoD[0,3]);
+            //Console.WriteLine(arrayTwoD[0,4]);
+            //Console.WriteLine(arrayTwoD[1,0]);
+            //Console.WriteLine(arrayTwoD[1,1]);
+
+            // 1 2 3 
+            // 4 5 6
+            // 7 8 9
+
+            Console.WriteLine($"Ранг двумерного массива: {arrayTwoD.Rank}");
+            Console.WriteLine($"Ранг зубчатого массива: {arrayTooth.Rank}");
+
+            Console.WriteLine($"Длина двумерного массива: {arrayTwoD.Length}");
+            Console.WriteLine($"Длина зубчатого массива: {arrayTooth.Length}");
+
+            Console.WriteLine($"Ранг двумерного массива: {arrayTwoD.GetLength(1)}");
+            Console.WriteLine($"Ранг зубчатого массива: {arrayTooth.GetLength(1)}");
         }
 
         public static void Sort(ref int[] array)
@@ -56,7 +114,6 @@ namespace Lesson_6
                 }
             }
         }
-
 
         public static int[] FindTwoMax(int[] arr)
         {
@@ -82,8 +139,6 @@ namespace Lesson_6
 
             return newArray;
         }
-
-
 
         public static int MaxElement(int[] array)
         {
