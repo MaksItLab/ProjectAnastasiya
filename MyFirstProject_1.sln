@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson_12", "Lesson_12\Less
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson_13", "Lesson_13\Lesson_13.csproj", "{12AE7BC1-714A-483B-845C-26E50A07CA12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson_14", "Lesson_14\Lesson_14.csproj", "{AFFD47C7-219C-46FE-9F03-7F0E4C30CAC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson_15", "Lesson_15\Lesson_15.csproj", "{DE219500-76D7-47D7-BF7E-4729575C16ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{12AE7BC1-714A-483B-845C-26E50A07CA12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12AE7BC1-714A-483B-845C-26E50A07CA12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12AE7BC1-714A-483B-845C-26E50A07CA12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFFD47C7-219C-46FE-9F03-7F0E4C30CAC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFFD47C7-219C-46FE-9F03-7F0E4C30CAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFFD47C7-219C-46FE-9F03-7F0E4C30CAC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFFD47C7-219C-46FE-9F03-7F0E4C30CAC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE219500-76D7-47D7-BF7E-4729575C16ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE219500-76D7-47D7-BF7E-4729575C16ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE219500-76D7-47D7-BF7E-4729575C16ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE219500-76D7-47D7-BF7E-4729575C16ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
