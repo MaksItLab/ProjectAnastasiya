@@ -20,14 +20,14 @@ namespace Lesson_17
             //1 - path
             //2 - filemode(режим работы)
             //3 - fileaccess(доступ операций потока к файлу)
-            //using (FileStream stream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
-            //{
-            //    string message = "Hello!";
+            using (FileStream stream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
+            {
+                string message = "Hello!";
 
-            //    byte[] buffer = Encoding.UTF8.GetBytes(message);
+                byte[] buffer = Encoding.UTF8.GetBytes(message);
 
-            //    stream.Write(buffer, 0, buffer.Length);
-            //};
+                stream.Write(buffer, 0, buffer.Length);
+            };
 
             //Чтение
             using (FileStream stream = new FileStream(filePath, FileMode.Open, FileAccess.Read))
